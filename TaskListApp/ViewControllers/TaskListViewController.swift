@@ -8,10 +8,10 @@
 import UIKit
 
 class TaskListViewController: UITableViewController {
+    
     private let viewContext = StorageManager.shared.persistentContainer.viewContext
     private let cellID = "task"
     private var taskList: [Task] = []
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class TaskListViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.backgroundColor = UIColor(named: "CustomBlue")
+        navBarAppearance.backgroundColor = UIColor(named: "CustomColor")
         
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
